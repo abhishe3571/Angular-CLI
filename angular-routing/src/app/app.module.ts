@@ -18,8 +18,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { CustomerListComponent } from './customer-list/customer-list.component';
-import { MatTableModule } from '@angular/material/table';
-import { MatPaginatorModule } from '@angular/material/paginator';
+
 import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
@@ -28,7 +27,7 @@ import { MatSortModule } from '@angular/material/sort';
     DashboardComponent,
     CustomerComponent,
     NavComponent,
-    CustomerListComponent
+    CustomerListComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,11 +43,9 @@ import { MatSortModule } from '@angular/material/sort';
     MatGridListModule,
     MatCardModule,
     MatMenuModule,
-    MatTableModule,
-    MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
